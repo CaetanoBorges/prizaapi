@@ -1,0 +1,23 @@
+{
+    "config": {
+        "platform-check": false
+    },
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "Classes/",
+            "Controladores\\": "Controladores/",
+            "Ferramentas\\": "FERRAMENTAS/"
+        },
+        "classmap": [
+            "Classes/",
+            "Controladores/",
+            "FERRAMENTAS/"
+        ]
+    },
+    "require": {
+        "mpdf/mpdf": "*",
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.6",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
