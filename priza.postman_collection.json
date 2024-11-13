@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "e67c6803-8f88-4572-a130-481595174e8a",
+		"name": "priza",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Entrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"cbcaetanoborges@gmail.com\",\r\n    \"passe\": 123456\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1/sysgen/auth/entrar",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"sysgen",
+								"auth",
+								"entrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RecuperarConta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"cbcaetanoborges@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1/sysgen/auth/recuperarconta",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"sysgen",
+								"auth",
+								"recuperarconta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConfirmarCodigo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"cbcaetanoborges@gmail.com\",\r\n    \"codigo\": 476045\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1/sysgen/auth/confirmarcodigo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"sysgen",
+								"auth",
+								"confirmarcodigo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NovaPasse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"921797626\",\r\n    \"codigo\":\"589499\",\r\n    \"passe\": 654321\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1/sysgen/auth/novopin",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"path": [
+								"sysgen",
+								"auth",
+								"novopin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token1",
+			"value": "pIhqt0MgtmMOvkhbyNpKQuddJQOSqxzq9P1Z5fYT0C8A+wMd2mPVpll7DFQkvrL6J7Ie9bhQ3nLJFC16VbMVOePiMd+dDH2h9zf1XIZEjOvz5W03X+RvACzdUQ4j8kKLNVrBEvtkAcYuAv3zMWn2lVNJbS8n9jWORz1CPJrXRTQ=.Nzc3YTQxNGE3MzcxNDE2NTc4NzU3NTQyMzQ3NTQ4NDQ1MDU0NmU0NzY4NjczMzcwNjY1NzM1NzE0ZjQ5NzQzNjY1NDkzODU1Mzk3NDQyNmM=",
+			"type": "default"
+		},
+		{
+			"key": "token2",
+			"value": "NIK7E04CkTTcHjTepkKr7iY6PgC0pEqvrw6t+ijMMdCQ7uaIxTrEZ3flIAvAeHs9jtGHgSffTCNop8KvNy4KXyNRbwUpYqqLaw9yjx94UMIrq9cvEHu54L33wnyoqk1AWAelX87OXR4///utlS83TjsGZDjeai8XJKerfSCzt++p4A==.NTY1MDM4NDMzOTU1MzQzMzQyNzM1NTQ4NTQ0NzU1NGE3OTRhNTM2YTU2NzE1MTU4NTg1MzU1Njg1ODc5MzE0OTcwNTU2YjRiNjk0Nzc5NjM=",
+			"type": "default"
+		},
+		{
+			"key": "sysgenAPIURL",
+			"value": "http://127.0.0.1/sysgen"
+		}
+	]
+}
